@@ -34,7 +34,7 @@ func NewVideoExtractor() VideoExtractor {
 }
 
 var videoTags = [4]string{"iframe", "embed", "object", "video"}
-var videoProviders = [4]string{"youtube", "vimeo", "dailymotion", "kewego"}
+var videoProviders = [4]string{"youtube", "vimeo", "dailymotion", "kewego", "tiktok", "twitter", "bitchute", "reddit"}
 
 func (ve *VideoExtractor) getEmbedCode(node *goquery.Selection) string {
 	return node.Text()
