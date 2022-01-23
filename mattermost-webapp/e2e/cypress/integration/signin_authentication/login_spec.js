@@ -68,20 +68,20 @@ describe('Login page', () => {
         // # Move inside of footer section
         cy.get('#footer_section').should('exist').and('be.visible').within(() => {
             const {
-                ABOUT_LINK,
-                HELP_LINK,
+//                ABOUT_LINK,
+//                HELP_LINK,
                 PRIVACY_POLICY_LINK,
                 TERMS_OF_SERVICE_LINK,
             } = FixedCloudConfig.SupportSettings;
-
+//
             // * Check if about footer link is present
-            cy.findByText('About').should('exist').
-                parent().and('have.attr', 'href', config.SupportSettings.AboutLink || ABOUT_LINK);
-
-            // * Check if privacy footer link is present
-            cy.findByText('Privacy').should('exist').
-                parent().and('have.attr', 'href', config.SupportSettings.PrivacyPolicyLink || PRIVACY_POLICY_LINK);
-
+//            cy.findByText('About').should('exist').
+//                parent().and('have.attr', 'href', config.SupportSettings.AboutLink || ABOUT_LINK);
+//
+//            // * Check if privacy footer link is present
+//            cy.findByText('Privacy').should('exist').
+//                parent().and('have.attr', 'href', config.SupportSettings.PrivacyPolicyLink || PRIVACY_POLICY_LINK);
+//
             // * Check if terms footer link is present
             cy.findByText('Terms').should('exist').
                 parent().and('have.attr', 'href', config.SupportSettings.TermsOfServiceLink || TERMS_OF_SERVICE_LINK);
@@ -94,7 +94,7 @@ describe('Login page', () => {
             const currentYear = todaysDate.getFullYear();
 
             // * Check if copyright footer is present
-            cy.findByText(`© 2015-${currentYear} Mattermost, Inc.`).should('exist');
+            cy.findByText(`© 2015-${currentYear} The Antisocial Network`).should('exist');
         });
     });
 
