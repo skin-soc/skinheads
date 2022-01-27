@@ -135,7 +135,7 @@ export default class NotLoggedIn extends React.PureComponent<Props> {
                         //    <span className='pull-right'>
                         //        {content}
                         //    </span>
-                        </div>
+                        //</div>
                     </div>
                 </div>
             </div>
