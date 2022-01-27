@@ -106,10 +106,10 @@ export const Preferences = {
     CATEGORY_SYSTEM_NOTICE: 'system_notice',
     TEAMS_ORDER: 'teams_order',
     RECOMMENDED_NEXT_STEPS: 'recommended_next_steps',
-    CLOUD_UPGRADE_BANNER: 'cloud_upgrade_banner',
-    CLOUD_TRIAL_BANNER: 'cloud_trial_banner',
-    START_TRIAL_MODAL: 'start_trial_modal',
-    ADMIN_CLOUD_UPGRADE_PANEL: 'admin_cloud_upgrade_panel',
+    //CLOUD_UPGRADE_BANNER: 'cloud_upgrade_banner',
+    //CLOUD_TRIAL_BANNER: 'cloud_trial_banner',
+    //START_TRIAL_MODAL: 'start_trial_modal',
+    //ADMIN_CLOUD_UPGRADE_PANEL: 'admin_cloud_upgrade_panel',
     CATEGORY_EMOJI: 'emoji',
     EMOJI_SKINTONE: 'emoji_skintone',
     ONE_CLICK_REACTIONS_ENABLED: 'one_click_reactions_enabled',
@@ -286,7 +286,7 @@ export const WarnMetricTypes = {
 };
 
 export const ModalIdentifiers = {
-    ABOUT: 'about',
+    //ABOUT: 'about',
     TEAM_SETTINGS: 'team_settings',
     CHANNEL_INFO: 'channel_info',
     DELETE_CHANNEL: 'delete_channel',
@@ -326,8 +326,8 @@ export const ModalIdentifiers = {
     SIDEBAR_WHATS_NEW_MODAL: 'sidebar_whats_new_modal',
     WARN_METRIC_ACK: 'warn_metric_acknowledgement',
     UPGRADE_CLOUD_ACCOUNT: 'upgrade_cloud_account',
-    START_TRIAL_MODAL: 'start_trial_modal',
-    TRIAL_BENEFITS_MODAL: 'trial_benefits_modal',
+    //START_TRIAL_MODAL: 'start_trial_modal',
+    //TRIAL_BENEFITS_MODAL: 'trial_benefits_modal',
     ENTERPRISE_EDITION_LICENSE: 'enterprise_edition_license',
     CONFIRM_NOTIFY_ADMIN: 'confirm_notify_admin',
     REMOVE_NEXT_STEPS_MODAL: 'remove_next_steps_modal',
@@ -787,8 +787,8 @@ export const DraggingStateTypes = {
 };
 
 export const AboutLinks = {
-    TERMS_OF_SERVICE: 'https://about.mattermost.com/default-terms/',
-    PRIVACY_POLICY: 'https://about.mattermost.com/default-privacy-policy/',
+    TERMS_OF_SERVICE: 'https://ext.skinheads.social/terms.html',
+    PRIVACY_POLICY: 'https://ext.skinheads.social/privacy.html',
 };
 
 export const CloudLinks = {
