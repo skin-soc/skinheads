@@ -47,20 +47,20 @@ export default class NotLoggedIn extends React.PureComponent<Props> {
             return null;
         }
 
-        if (this.props.config.AboutLink) {
-            content.push(
-                <a
-                    key='about_link'
-                    id='about_link'
-                    className='footer-link'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    href={this.props.config.AboutLink}
-                >
-                    <FormattedMessage id='web.footer.about'/>
-                </a>,
-            );
-        }
+        //if (this.props.config.AboutLink) {
+        //    content.push(
+        //        <a
+        //            key='about_link'
+        //            id='about_link'
+        //            className='footer-link'
+        //            target='_blank'
+        //            rel='noopener noreferrer'
+        //            href={this.props.config.AboutLink}
+        //        >
+        //            <FormattedMessage id='web.footer.about'/>
+        //        </a>,
+        //    );
+        //}
 
         if (this.props.config.PrivacyPolicyLink) {
             content.push(
@@ -92,20 +92,20 @@ export default class NotLoggedIn extends React.PureComponent<Props> {
             );
         }
 
-        if (this.props.config.HelpLink) {
-            content.push(
-                <a
-                    key='help_link'
-                    id='help_link'
-                    className='footer-link'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    href={this.props.config.HelpLink}
-                >
-                    <FormattedMessage id='web.footer.help'/>
-                </a>,
-            );
-        }
+        //if (this.props.config.HelpLink) {
+        //    content.push(
+        //        <a
+        //            key='help_link'
+        //            id='help_link'
+        //            className='footer-link'
+        //            target='_blank'
+        //            rel='noopener noreferrer'
+        //            href={this.props.config.HelpLink}
+        //        >
+        //            <FormattedMessage id='web.footer.help'/>
+        //        </a>,
+        //    );
+        //}
 
         return (
             <div className='inner-wrap'>
@@ -122,19 +122,19 @@ export default class NotLoggedIn extends React.PureComponent<Props> {
                                 id='company_name'
                                 className='pull-right footer-site-name'
                             >
-                                {'Mattermost'}
+                                {`© 2020-${new Date().getFullYear()} The Skinheads Network`}
                             </span>
                         </div>
-                        <div className='col-xs-12'>
-                            <span
-                                id='copyright'
-                                className='pull-right footer-link copyright'
-                            >
-                                {`© 2015-${new Date().getFullYear()} Mattermost, Inc.`}
-                            </span>
-                            <span className='pull-right'>
-                                {content}
-                            </span>
+                        //<div className='col-xs-12'>
+                        //    <span
+                        //        id='copyright'
+                        //        className='pull-right footer-link copyright'
+                        //    >
+                        //        {`© 2015-${new Date().getFullYear()} Mattermost, Inc.`}
+                        //    </span>
+                        //    <span className='pull-right'>
+                        //        {content}
+                        //    </span>
                         </div>
                     </div>
                 </div>
@@ -142,4 +142,3 @@ export default class NotLoggedIn extends React.PureComponent<Props> {
         );
     }
 }
-
