@@ -10,7 +10,6 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0) !important;
 }
 
 .signup-header {
@@ -30,7 +29,7 @@ body {
 
 .signup-team__container {
     position: relative;
-    max-width: 400px;
+    max-width: 600px;
     padding: 100px 0 50px;
     margin: 0 auto;
 
