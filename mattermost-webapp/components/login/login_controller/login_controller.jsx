@@ -872,7 +872,7 @@ class LoginController extends React.PureComponent {
                     id='login_section'
                     className='col-sm-12'
                 >
-                    <div className={'signup-team__container ' + customClass}>
+                    <div align="center" className={'signup-team__container ' + customClass}>
                         <div className='signup__markdown'>
                             {customContent}
                         </div>

@@ -402,7 +402,7 @@ export default class SignupController extends React.PureComponent {
                 <AnnouncementBar/>
                 <BackButton/>
                 <div className='col-sm-12'>
-                    <div className='signup-team__container'>
+                    <div align="center" className='signup-team__container'>
                         <img
                             alt={'signup team logo'}
                             className='signup-team-logo'
