@@ -9,7 +9,7 @@
 
         &.copyright {
             padding-right: 0;
-            color: $white;
+            color: $primary-color;
             display: none !important;
         }
     }
@@ -19,7 +19,7 @@
         font-size: 14px;
         font-weight: bold;
         //text-transform: uppercase;
-        text-shadow: 0 0 3px #931020;
+        text-shadow: 0 0 3px #000000;
     }
 }
 
