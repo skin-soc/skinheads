@@ -564,7 +564,7 @@ class LoginController extends React.PureComponent {
                             error={this.state.serverError}
                             margin={true}
                         />
-                        <div className={'form-group' + errorClass}>
+                        <div width='300px' className={'form-group' + errorClass}>
                             <input
                                 id='loginId'
                                 className='form-control'
