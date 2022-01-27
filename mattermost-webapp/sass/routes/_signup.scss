@@ -6,6 +6,10 @@ body {
             top: 24px;
         }
     }
+    background-image: url(images/bg.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .signup-header {
@@ -134,6 +138,7 @@ body {
 
     h1 {
         font-weight: 600;
+        color: #931020 !important;
     }
 
     h2 {
@@ -147,6 +152,7 @@ body {
         margin: 0 0 1.3em;
         font-size: 1.5em;
         font-weight: 600;
+        color: #000000 !important;
     }
 
     h4 {
@@ -220,7 +226,7 @@ body {
     }
 
     .signup-team-logo {
-        display: none;
+        //display: none;
         width: 210px;
         margin: 0 0 2em;
     }
