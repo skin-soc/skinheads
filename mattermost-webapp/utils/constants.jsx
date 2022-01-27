@@ -1174,6 +1174,7 @@ export const Constants = {
         'plugins',
         'playbooks',
         'boards',
+        'nazi',
     ],
     RESERVED_USERNAMES: [
         'valet',
@@ -1182,6 +1183,14 @@ export const Constants = {
         'here',
         'matterbot',
         'system',
+        'skinhead',
+        'skinheads',
+        'naziskin',
+        'naziskinhead',
+        'whiteskin',
+        'whiteskinhead',
+        'bot',
+        'robot'
     ],
     MONTHS: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
     MAX_DMS: 20,
