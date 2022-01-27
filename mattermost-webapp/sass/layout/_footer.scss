@@ -9,17 +9,17 @@
 
         &.copyright {
             padding-right: 0;
-            color: $dark-gray;
+            color: $white;
             display: none !important;
         }
     }
 
     .footer-site-name {
-        padding: 1.5em 0 1em;
+        padding: 1em 0 1em;
         font-size: 14px;
         font-weight: bold;
-        text-transform: uppercase;
-        text-shadow: 0 0 3px #FFFFFF;
+        //text-transform: uppercase;
+        text-shadow: 0 0 3px #931020;
     }
 }
 
