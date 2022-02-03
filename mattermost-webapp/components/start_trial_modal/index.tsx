@@ -33,6 +33,68 @@ type Props = {
 }
 
 function StartTrialModal(props: Props): JSX.Element | null {
+  const [status, setLoadStatus] = useState(TrialLoadStatus.NotStarted);
+const dispatch = useDispatch<DispatchFunc>();
+
+useEffect(() => {
+    dispatch(getStandardAnalytics());
+}, []);
+
+const {formatMessage} = useIntl();
+const show = useSelector((state: GlobalState) => isModalOpen(state, ModalIdentifiers.START_TRIAL_MODAL));
+const stats = useSelector((state: GlobalState) => state.entities.admin.analytics);
+
+const openTrialBenefitsModal = async () => {
+    await dispatch(openModal({
+        modalId: ModalIdentifiers.TRIAL_BENEFITS_MODAL,
+        dialogType: TrialBenefitsModal,
+        dialogProps: {trialJustStarted: true},
+    }));
+};
+
+const requestLicense = async () => {
+    setLoadStatus(TrialLoadStatus.Started);
+    let users = 0;
+    if (stats && (typeof stats.TOTAL_USERS === 'number')) {
+        users = stats.TOTAL_USERS;
+    }
+    const requestedUsers = Math.max(users, 30);
+    const {error} = await dispatch(requestTrialLicense(requestedUsers, true, true, 'license'));
+    if (error) {
+        setLoadStatus(TrialLoadStatus.Failed);
+    }
+
+    setLoadStatus(TrialLoadStatus.Success);
+    await dispatch(getLicenseConfig());
+    await dispatch(closeModal(ModalIdentifiers.START_TRIAL_MODAL));
+    openTrialBenefitsModal();
+};
+
+const btnText = (status: TrialLoadStatus): string => {
+    switch (status) {
+    case TrialLoadStatus.Started:
+        return formatMessage({id: 'start_trial.modal.loading', defaultMessage: 'Loading...'});
+    case TrialLoadStatus.Success:
+        return formatMessage({id: 'start_trial.modal.loaded', defaultMessage: 'Loaded!'});
+    case TrialLoadStatus.Failed:
+        return formatMessage({id: 'start_trial.modal.failed', defaultMessage: 'Failed'});
+    default:
+        return formatMessage({id: 'start_trial.modal_btn.start', defaultMessage: 'Start 30-day trial'});
+    }
+};
+
+if (!show) {
+    return null;
+}
+
+const handleOnClose = () => {
+    if (props.onClose) {
+        props.onClose();
+    }
+    dispatch(closeModal(ModalIdentifiers.START_TRIAL_MODAL));
+};
+
+return ();
 }
 
 export default StartTrialModal;
