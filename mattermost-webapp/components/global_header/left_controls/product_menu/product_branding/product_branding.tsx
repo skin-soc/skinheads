@@ -33,7 +33,7 @@ const ProductBranding = (): JSX.Element => {
                 size={200}
                 margin='none'
             >
-                {currentProduct ? currentProduct.switcherText : 'Channels'}
+                {currentProduct ? currentProduct.switcherText : 'Chat'}
             </Heading>
         </ProductBrandingContainer>
     );
