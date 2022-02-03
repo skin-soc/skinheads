@@ -94,7 +94,10 @@ const handleOnClose = () => {
     dispatch(closeModal(ModalIdentifiers.START_TRIAL_MODAL));
 };
 
-return ();
+return (
+    <Modal>
+    </Modal>
+);
 }
 
 export default StartTrialModal;
