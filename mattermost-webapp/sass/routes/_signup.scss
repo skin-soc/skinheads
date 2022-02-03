@@ -29,6 +29,9 @@ body {
 
 .signup-team__container {
     position: relative;
+    align-items: center;
+    align-content: center;
+    text-align: center;
     max-width: 450px;
     padding: 100px 0 50px;
     margin: 0 auto;
@@ -161,10 +164,12 @@ body {
         margin-bottom: 1em;
         font-size: em(20px);
         font-weight: 600;
+        color: #fff;
     }
 
     h5 {
         font-size: em(16px);
+        color: #fff;
     }
 
     hr {
@@ -178,7 +183,7 @@ body {
 
         .black,
         &.black {
-            color: #000;
+            color: #fff;
         }
     }
 
