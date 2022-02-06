@@ -185,5 +185,21 @@
 			C485,440.2,484.2,443.8,483,449.3z"/>
 	</g>
 </g>
-
+<g>
+	<g>
+		<g>
+			<defs>
+				<rect id="SVGID_1_" x="236.4" y="278.2" width="327.4" height="365.5"/>
+			</defs>
+			<clipPath id="SVGID_00000101086347044780750560000008443539018923655074_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_00000101086347044780750560000008443539018923655074_);">
+				
+					<image style="overflow:visible;enable-background:new    ;" width="1371" height="1530" xlink:href="24D5DED0197D53AD.png"  transform="matrix(0.2388 0 0 0.2388 236.4319 278.373)">
+				</image>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>
