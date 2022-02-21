@@ -142,7 +142,9 @@ body {
     h1 {
         font-weight: 600;
         color: #931020 !important;
-        text-shadow: 0 0 3px #FFFFFF;
+        text-shadow: 0 0 3px black;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
     }
 
     h2 {
@@ -156,8 +158,10 @@ body {
         margin: 0 0 1.3em;
         font-size: 1.5em;
         font-weight: 600;
-        color: #000000 !important;
-        text-shadow: 0 0 3px #FFFFFF;
+        color: #FFFFFF !important;
+        text-shadow: 0 0 3px black;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #931020;
     }
 
     h4 {
@@ -180,7 +184,7 @@ body {
         margin-bottom: 1em;
         color: #555;
         line-height: 1.5;
-        
+
         .black,
         &.black {
             color: #000;
