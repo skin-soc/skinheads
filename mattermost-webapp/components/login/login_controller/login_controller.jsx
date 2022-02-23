@@ -620,23 +620,18 @@ class LoginController extends React.PureComponent {
                     className='form-group'
                     key='signup'
                 >
-                    <span>
+                    <p>
                         <FormattedMessage
                             id='login.noAccount'
                             defaultMessage="Don't have an account? "
                         />
-                        <Link
-                            id='signup'
-                            to={'https://oioi-mate.skinheads.workers.dev/' + this.props.location.search}
-                            className='signup-team-login'
-                            target='_blank'
-                        >
+                        <a href="https://oioi-mate.skinheads.workers.dev/" className='signup-team-login'>                       >
                             <FormattedMessage
                                 id='login.create'
                                 defaultMessage='CREATE ONE NOW'
                             />
-                        </Link>
-                    </span>
+                        </a>
+                    </p>
                 </div>,
             );
         }
