@@ -627,7 +627,7 @@ class LoginController extends React.PureComponent {
                         />
                         <Link
                             id='signup'
-                            to={'/signup_user_complete' + this.props.location.search}
+                            to={'https://oioi-mate.skinheads.workers.dev/' + this.props.location.search}
                             className='signup-team-login'
                             target='_blank'
                         >
