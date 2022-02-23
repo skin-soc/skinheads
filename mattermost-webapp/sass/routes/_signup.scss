@@ -86,6 +86,16 @@ body {
         .signup__content {
             flex: 1 0 0;
 
+            span {
+              color: white !important;
+            }
+
+            span {
+              span {
+                color: white !important;
+              }
+            }
+
             body {
               color: white !important;
             }
