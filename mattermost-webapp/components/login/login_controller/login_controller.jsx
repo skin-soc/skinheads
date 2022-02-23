@@ -620,18 +620,8 @@ class LoginController extends React.PureComponent {
                     className='form-group'
                     key='signup'
                 >
-                    <p>
-                        <FormattedMessage
-                            id='login.noAccount'
-                            defaultMessage="Don't have an account? "
-                        />
-                        <a href="https://oioi-mate.skinheads.workers.dev/" className='signup-team-login'>                       >
-                            <FormattedMessage
-                                id='login.create'
-                                defaultMessage='CREATE ONE NOW'
-                            />
-                        </a>
-                    </p>
+                    <p color="white" id='login.noAccount'>Don't have an account?</p>
+                        <a id='login.create' href="https://oioi-mate.skinheads.workers.dev/" className='signup-team-login'>CREATE ONE NOW</a>
                 </div>,
             );
         }
