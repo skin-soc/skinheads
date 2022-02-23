@@ -90,7 +90,7 @@ export default class NotLoggedIn extends React.PureComponent<Props> {
                         <div className='col-xs-12'>
                             <span
                                 id='company_name'
-                                className='pull-right footer-site-name'
+                                className='footer-site-name'
                             >
                                 {`© 2020-${new Date().getFullYear()} The Skinheads Network`}
                             </span>
