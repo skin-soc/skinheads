@@ -629,10 +629,11 @@ class LoginController extends React.PureComponent {
                             id='signup'
                             to={'/signup_user_complete' + this.props.location.search}
                             className='signup-team-login'
+                            target='_blank'
                         >
                             <FormattedMessage
                                 id='login.create'
-                                defaultMessage='Create one now'
+                                defaultMessage='CREATE ONE NOW'
                             />
                         </Link>
                     </span>
